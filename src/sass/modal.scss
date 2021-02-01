@@ -1,0 +1,105 @@
+
+
+.modal {
+    &__content {
+   background: white;
+   width:900px;
+   height: 500px;
+   margin: 0 auto;
+   position: relative;
+   @include for-size(mobile) {
+       width: 90%;
+       height: 100%;
+       padding-left: 10px;
+       margin: 0 auto;
+    //    padding-right: 10px;
+   }
+    }
+      &__window {
+            //   padding: 0 15px 0 15px;
+        //   background:black;
+          backdrop-filter: blur(4px);
+          box-sizing: content-box;
+        //   padding: 200px;
+        padding-top: 32px;
+ padding-bottom: 32px;
+//  padding-left: 15px;
+              z-index: 1;
+    display: none;
+    // padding-top: 10px;
+
+      position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        // margin: 50px;
+        @include for-size(mobile) {
+            padding-top: 0;
+        }
+      }
+      &__close {
+          &-wrap {
+   display: none;
+           position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border-radius: 50%;
+        // padding: 20px;
+          }
+          &-text {
+              font-size: 1.5em;
+          }
+              
+      }
+      &__text {
+          text-align: center;
+          font-size: 2em;
+        padding-top: 15px;
+        @include for-size(mobile) {
+            margin-bottom: 30px;
+            padding-top: 50px;
+        }
+      }
+    &__list {
+         
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    &__item {
+        // margin: 0 20px 20px 0;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 1.5em;
+        margin-right: 15px;
+           margin-bottom: 15px;
+       
+        &:hover {
+              background-color: yellow;
+              cursor: pointer;
+              color: black;
+        }
+        @include for-size(mobile) {
+              padding: 5px;
+                 margin-right: 5px;
+           margin-bottom: 5px;
+       
+        }
+    }
+     &__item a{
+        text-decoration: none;
+          color: white;
+     
+    }
+}

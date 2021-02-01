@@ -1,0 +1,18 @@
+.locations {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 0 10px 10px 0;
+        text-decoration: none;
+        background-color: green;
+        border-radius: 5px;
+        padding: 10px;
+    }
+     &__item a{
+        text-decoration: none;
+          color: white;
+     
+    }
+}
