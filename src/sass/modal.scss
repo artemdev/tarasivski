@@ -1,17 +1,24 @@
 
 
 .modal {
+   position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+
     &__content {
+        padding: 50px;
    background: white;
-   width:900px;
-   height: 500px;
+   width:90vw;
+   height: 100vh;
    margin: 0 auto;
    position: relative;
+    //  padding: 10px 50px 0 50px;
+     margin: 0 auto;
    @include for-size(mobile) {
-       width: 90%;
-       height: 100%;
-       padding-left: 10px;
-       margin: 0 auto;
+       width: 90vw;
+       height: 100vh;
+       padding: 0 0 0 10px;
+    //    margin: 0 auto;
     //    padding-right: 10px;
    }
     }
@@ -28,7 +35,7 @@
     display: none;
     // padding-top: 10px;
 
-      position: absolute;
+      position: fixed;
         left: 0;
         top: 0;
         width: 100%; /* Full width */
@@ -64,6 +71,7 @@
           text-align: center;
           font-size: 2em;
         padding-top: 15px;
+         margin-bottom: 30px;
         @include for-size(mobile) {
             margin-bottom: 30px;
             padding-top: 50px;
@@ -88,7 +96,12 @@
         &:hover {
               background-color: yellow;
               cursor: pointer;
-              color: black;
+             
+        }
+        &:hover > a {
+       
+          color: #000000 !important;
+     
         }
         @include for-size(mobile) {
               padding: 5px;
