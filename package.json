@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+  "homepage": "https://artemdev.github.io/tarasivski",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
@@ -48,5 +48,8 @@
     "gulp-uglify": "^3.0.2",
     "require-dir": "^1.2.0",
     "usedcss": "^1.0.7"
+  },
+  "dependencies": {
+    "basiclightbox": "^5.0.4"
   }
 }
