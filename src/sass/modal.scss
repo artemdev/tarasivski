@@ -10,7 +10,7 @@
       // border-radius: 25px;
         justify-content: space-between ; 
    align-items:center;
-   flex-direction: column ;
+   flex-direction: column;
         padding: 50px;
    background: white;
    width:50%;
@@ -50,7 +50,7 @@
         // margin: 50px;
         @include for-size(mobile) {
             padding-top: 0;
-            display: flex;
+            // display: flex;
             align-items: center;
         
         }
