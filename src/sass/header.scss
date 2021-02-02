@@ -1,32 +1,36 @@
 .header {
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     // flex-wrap: nowrap;
     text-align: center;
     display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         @include for-size(mobile) {
-            flex-direction: column;
+            margin-bottom: 20px;
+                 margin-top: 20px;
         }
     &__text {
-        font-size: 1.8em;
-        width: 100%;
-        text-align: right;
-        margin-right: 50px;
+
+    font-size: 1.5em;
+
+    margin-left: 50px;
          @include for-size(mobile) {
-            text-align: center;
-             margin-right: 0;
+            text-align: right;
+             margin-left: 0;
+                 font-size: 1em;
         }
     }
    
+   
       &__image {
-        width: 200px;
+        width: 150px;
         height: auto;
         @include for-size(mobile) {
-               width: 300px;
-               margin: 0 auto;
+               width: 100px;
+            //    margin: 0 auto;
         }
         // margin-right: 50px;
         // height: 150px;

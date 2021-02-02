@@ -5,30 +5,37 @@
     top: 0;
     left: 0;
 
+
     &__content {
+      // border-radius: 25px;
+        justify-content: space-between ; 
+   align-items:center;
+   flex-direction: column ;
         padding: 50px;
    background: white;
-   width:90vw;
-   height: 100vh;
+   width:50%;
+   height: auto;
    margin: 0 auto;
    position: relative;
     //  padding: 10px 50px 0 50px;
      margin: 0 auto;
    @include for-size(mobile) {
+
        width: 90vw;
-       height: 100vh;
+       height: auto;
        padding: 0 0 0 10px;
+       padding-bottom: 50px;
     //    margin: 0 auto;
     //    padding-right: 10px;
    }
     }
       &__window {
             //   padding: 0 15px 0 15px;
-        //   background:black;
-          backdrop-filter: blur(4px);
+          background: rgba($color: #000000, $alpha: 0.8);
+          backdrop-filter: blur(6px);
           box-sizing: content-box;
         //   padding: 200px;
-        padding-top: 32px;
+        padding-top: 100px;
  padding-bottom: 32px;
 //  padding-left: 15px;
               z-index: 1;
@@ -43,17 +50,22 @@
         // margin: 50px;
         @include for-size(mobile) {
             padding-top: 0;
+            display: flex;
+            align-items: center;
+        
         }
       }
       &__close {
           &-wrap {
    display: none;
+ 
            position: absolute;
         right: 0;
-        top: 0;
+        top: 0px;
         cursor: pointer;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
+        // border-radius: 50%;
         background-color: black;
         color: white;
         display: flex;
@@ -63,7 +75,7 @@
         // padding: 20px;
           }
           &-text {
-              font-size: 1.5em;
+              font-size: 1.1em;
           }
               
       }
@@ -85,18 +97,26 @@
     }
     &__item {
         // margin: 0 20px 20px 0;
+        background-color: #e0e0e0;
         text-decoration: none;
-        background-color: green;
+        border:2px solid #e0e0e0;
+       
+         background: white;
         border-radius: 10px;
-        padding: 15px;
-        font-size: 1.5em;
+        padding: 20px;
+        font-size: 1em;
         margin-right: 15px;
            margin-bottom: 15px;
-       
         &:hover {
-              background-color: yellow;
+          
               cursor: pointer;
+              background: rgba(0, 0, 0, 0.04);
+                //  background: rgba(0, 0, 0, 0.05);
              
+        }
+        & a {
+  color: rgba(0, 0, 0, 0.87);
+              text-decoration: none;
         }
         &:hover > a {
        
@@ -104,15 +124,11 @@
      
         }
         @include for-size(mobile) {
-              padding: 5px;
+              padding: 10px;
                  margin-right: 5px;
            margin-bottom: 5px;
        
         }
     }
-     &__item a{
-        text-decoration: none;
-          color: white;
      
-    }
 }

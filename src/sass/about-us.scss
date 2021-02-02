@@ -1,58 +1,102 @@
 .about-us {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 500px;
-    &__picture {
-          background-image: url('../images/picture.jpg');
-
+        //    margin-bottom: 50px;
+               &__picture-wrap {
+                   @include for-size(mobile) {
+                       position: absolute;
+                       top: 0;
+                       width: 100%;
+                    height: 100%;
+                         background-image: url('../images/orig-mobile.jpg');
+            background-repeat: no-repeat;
+            z-index: -1;
+            opacity: 0.5;
+            // background-color: rgba($color: #ffffff, $alpha: 0.5);
+                   }
+                   width: 50%;
+                    height: 100%;
+                     background-image: url('../images/orig.jpg');
              background-position: center;
         background-size: cover;
+        opacity: 0.8;
+               }
+              
+    &__picture {
+
         
               position: relative;
               width: 100%;
                 height:  100%;
               
     }
+    &__text-item {
+        
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    &__text-list {
+        margin-right: 150px;
+        margin-top: 100px;
+        margin-left: 50px;
+        @include for-size(mobile) {
+  margin: 0;
+        }
+    } 
+
     &__text-wrap {
-      
-        // margin: 0;
+        position: relative;
+         
         line-height: 50px;
             width: 100%;
              height:  100%;
           display: flex;
-          flex-direction: column;
+          
                 align-items: center;
                 justify-content: center;
         position: relative;
-        text-align: center;
+        text-align: left;
         font-size: 25px;
-        background-color: rgba($color: white, $alpha: 0.7);
+        font-weight: 500;
+        background: rgba($color: white, $alpha: 0.7);
+        padding-right: 50px;
         @include for-size(mobile) {
             text-align: left;
             padding: 20px;
             line-height: 40px;
+            text-align: center;
+            background: none !important;
         }
       
        
        
     }
+    
       &__link {
-         font-size: 1.3em;
+          text-transform: uppercase;
+         font-size: 1.5em;
          text-decoration: none;
          padding: 5px;
-         background-color: yellow;
-          padding: 15px;
-          margin-bottom: 15px;
+         background: #4caf50;
+        //  border: 5px solid rgba(56, 142, 60, 0.2);
+          padding: 25px;
+        
           border-radius: 15px;
-             color: green;
+             color: white;
          @include for-size(mobile) {
 
        
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
-     
+        &:hover {
+             background: yellow;
          }
+         }
+        
       
     
      }
@@ -60,6 +104,18 @@
         display: flex;
         width: 100%;
         justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+       
+        @include for-size(mobile) {
+             position: relative;
+             top: 0;
+        left: 0;
+         margin-bottom: 50px;
+        }
      }
 
 }
+
+   
