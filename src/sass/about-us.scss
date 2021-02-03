@@ -18,7 +18,7 @@
             opacity: 0.5;
             // background-color: rgba($color: #ffffff, $alpha: 0.5);
                    }
-                   width: 50%;
+                   width: 100%;
                     height: 100%;
                      background-image: url('../images/orig.jpg');
              background-position: center;
@@ -35,9 +35,15 @@
               
     }
     &__text-item {
-        
+        font-family: sans-serif;
+       color: #303030;
         line-height: 25px;
         margin-bottom: 25px;
+        // color: #d32f2f;
+        font-size: 0.9em;
+    
+        padding: 5px;
+        border-radius: 10px;
     }
     &__text-list {
         margin-right: 150px;
@@ -50,7 +56,7 @@
 
     &__text-wrap {
         position: relative;
-         
+             
         line-height: 50px;
             width: 100%;
              height:  100%;
@@ -62,8 +68,8 @@
         text-align: left;
         font-size: 25px;
         font-weight: 500;
-        background: rgba($color: white, $alpha: 0.7);
-        padding-right: 50px;
+        background: rgba($color: white, $alpha: 0.5);
+        // padding-right: 50px;
         @include for-size(mobile) {
             text-align: left;
             padding: 20px;
@@ -80,17 +86,14 @@
           text-transform: uppercase;
          font-size: 1.5em;
          text-decoration: none;
-         padding: 5px;
-         background: #4caf50;
-        //  border: 5px solid rgba(56, 142, 60, 0.2);
-          padding: 25px;
+
         
-          border-radius: 15px;
+        //  border: 5px solid rgba(56, 142, 60, 0.2);
+        //   padding: 25px;
+
              color: white;
          @include for-size(mobile) {
-       line-height: 60px;
-      vertical-align: middle;
-    padding: 0 25px;
+  
         font-size: 16px;
         text-align: center;
         
@@ -100,14 +103,19 @@
     
      }
      &__link-wrap {
+                 
+          border-radius: 15px;
         display: flex;
-        width: 100%;
+        width: 400px;
         justify-content: center;
+        align-items: center;
         position: absolute;
             top: 50%;
-    left: 15%;
-       
+    right: 29%;
+       height: 60px;
+        background: #4caf50;
         @include for-size(mobile) {
+               width: 80%;
              position: relative;
              top: 0;
         left: 0;
